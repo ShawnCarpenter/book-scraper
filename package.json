@@ -7,7 +7,8 @@
     "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config",
     "test:watch": "npm run test -- --watch",
     "start": "node -r dotenv/config index.js",
-    "start:watch": "nodemon -r dotenv/config index.js"
+    "start:watch": "nodemon -r dotenv/config index.js",
+    "scrape": "node -r dotenv/config ./lib/scraper.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -24,8 +25,10 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "@types/pg": "^7.14.4",
     "dotenv": "^8.2.0",
     "jsdom": "^16.4.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "pg": "^8.3.3"
   }
 }
