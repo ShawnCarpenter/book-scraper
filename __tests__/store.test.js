@@ -1,5 +1,5 @@
 const fs = require('fs');
-const store = require('../lib/store');
+const store = require('../lib/scraper/store');
 const pool = require('../lib/utils/pool');
 
 describe('store function', () => {
